@@ -42,6 +42,9 @@ class App extends React.Component {
           Search for a topic
         </Header>
         <SearchBar searchForTopic={this.searchForTopic} />
+        <p style={{ textAlign: "center" }}>
+          Powered by <a href="https://newsapi.org/">NewsAPI.org</a>
+        </p>
         {loading && (
           <p style={{ textAlign: "center" }}>Searching for articles...</p>
         )}
